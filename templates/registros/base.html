@@ -9,14 +9,16 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="span16">
-                <h1>Twitnerário <small>Alpha</small></h1>
-                <img src="{{MEDIA_URL}}img/twitnerario_logo.png" width="66" height="66">
-            </div>
-        </div>
-    	{% block content %}{% endblock %}
+	<div class="container">
+		<div class="content">
+
+			<div class="page-header">
+				<h1>Twitnerário <small>Alpha</small></h1>
+			</div>
+
+			{% block content %}{% endblock %}
+
+		</div>
 	</div>
 
 {% block footer_inc %}{% endblock %}
