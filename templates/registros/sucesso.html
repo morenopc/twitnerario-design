@@ -1,2 +1,12 @@
-<h3>Sucesso</h3>
-{{info}}
+{% extends "base.html" %}
+{% block page_title %}Sucesso! - {% endblock %}
+
+{% block content %}
+
+	<div class="alert-message block-message success">
+		<a href="#" class="close">×</a>
+		<p><strong>Sucesso!</strong></p>
+		<p>{{ info }}</p>
+	</div>
+
+{% endblock %}

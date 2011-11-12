@@ -1,0 +1,24 @@
+{% load form_utils_tags %}
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="utf-8">
+	<title>{% block page_title %}{% endblock %}Twitnerário Alpha</title>
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	{% block head_inc %}{% endblock %}
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="span16">
+                <h1>Twitnerário <small>Alpha</small></h1>
+                <img src="{{MEDIA_URL}}img/twitnerario_logo.png" width="66" height="66">
+            </div>
+        </div>
+    	{% block content %}{% endblock %}
+	</div>
+
+{% block footer_inc %}{% endblock %}
+</body>
+</html>
